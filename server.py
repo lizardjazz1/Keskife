@@ -14,5 +14,5 @@ print(f'Server is listening on {IP}:{PORT}')
 
 while True:
     user_socket, address = serv.accept()
-    user_socket.send('You are connected'.encode('uft-8'))
+    user_socket.send("You are connected".encode('utf-8'))
     

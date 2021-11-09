@@ -13,7 +13,8 @@ client = socket.socket(
 PORT = 9090
 client.connect((input("Введите IP сервера:"),PORT))
 while True:
-    data = client.recv(1024) #Receive
+    data = client.recv(1024) #receive
+    print(data.decode('utf-8'))
     
 class Serverapp(QtWidgets.QMainWindow, mainmenu.Ui_MainWindow):
     def __init__(self):
